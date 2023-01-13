@@ -9,6 +9,7 @@
             .img-line{
                 margin-right: 10px;
                 margin-left: 10px;
+                border: 2px;
             }
             .leftimg{
                 float: left;
@@ -18,12 +19,11 @@
                 float: right;
                 margin: 0 0 10px 10px;
                 }
-            .centerimg{
-                display: block;
-                margin: auto;
-            }
+            .pul-center{
+                text-align: center;
+                }
         </style>
-        <!--наверное можно еще было выделить по другому например  inline-start | inline-end -->
+        
         <BODY> 
             <p><img src="logo.png" alt="Python" width="350" height="350" class="rightimg" ></p> <br>
             <H1 id="home"><b>HOW-TO: Программа на Python, Часть 1</b></H1>  
@@ -90,18 +90,30 @@
                             программирования, а отступы.</p>
                          <br>
                          <br>
-                         <p class="img-line">
-                             <a href="index.html">
-                            <img alt="Программа на Python &#8212; часть 1" src="nazad.jpg" width="80" height="80" class="leftimg" >
-                          </a>   
-                          <a href="#home">
-                            <img alt="Программа на Python &#8212; часть 1" src="domoi.jpg" width="80" height="80" class="centerimg">
-                          </a>   
-                          <a href="index2.html">
-                            <img alt="Программа на Python &#8212; часть 1" src="v_perod.jpg" width="80" height="80" class="rightimg" >
-                          </a>
-                        </p>
+                         
+                         <!--
+                          не могу понять почему последняя кнопка ниже  
+                          <a href="index.html"><img alt="Программа на Python &#8212; часть 1" src="nazad.jpg" width="80" height="80" class="leftimg"></a>
+                          <a href="#home"><img alt="Программа на Python &#8212; часть 1" src="domoi.jpg" width="80" height="80" class="centerimg"></a>
+                          <a href="index2.html"><img alt="Программа на Python &#8212; часть 1" src="v_perod.jpg" width="80" height="80" class="rightimg"></a>
+                        В этой комбинакии уже средняя проседает в низ
+                        <tr>
+                            <td width="40px"><p class="leftimg" > <a href="index.html"><button><img alt="стрелка назад" title="Программа на Python &#8212; часть 1" src="nazad.jpg"></button></a></p></td>
+                            <td width="40px"><p class="rightimg" ><a href="index2.html"><button><img alt="стрелка в перед " title="Программа на Python &#8212; часть 2" src="v_perod.jpg"></button></a></p></td> 
+                            <td width="40px"><p class="pul-center" ><a href="#home"><button><img alt="В начало или к заголовку" title="К содержанию" src="domoi.jpg"></button></a></p></td>    
+                        </tr>
 
+                        а вот последняя версия всетаки заработала
+                        -->
 
+                        
+                          
+                        <div >
+                            <div class="leftimg"><a href="index.html"><button><img alt="стрелка назад" title="Программа на Python &#8212; часть 1" src="nazad.jpg"></button></a></div>
+                            <div class="rightimg"><a href="index2.html"><button><img alt="стрелка в перед " title="Программа на Python &#8212; часть 2" src="v_perod.jpg"></button></a></div>
+                            <div class="pul-center"><a href="#home"><button><img alt="В начало или к заголовку" title="К содержанию" src="domoi.jpg"></button></a></div>
+                         </div>
+                          
+                          <!--Считается ли ошибкой не знаю но если надо по кругу листать то в index надр дописать 3 и в последней index3.html так же заменить  href="index.html -->
                             </BODY> 
 

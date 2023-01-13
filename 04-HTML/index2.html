@@ -11,7 +11,23 @@
     color: rgb(105, 103, 103); 
     height: 2px; 
    }
-  </style>
+               .img-line{
+                margin-right: 10px;
+                margin-left: 10px;
+                border: 2px;
+            }
+            .leftimg{
+                float: left;
+                margin: 0 10px 10px 0;
+            }
+            .rightimg{
+                float: right;
+                margin: 0 0 10px 10px;
+                }
+                .pul-center{
+                text-align: center;
+                }
+    </style>
   <!--чтоб не мучить сетя линиями выделил в  <hr> может это в данном случает не правильно -->
        </HEAD> 
         <BODY> 
@@ -87,13 +103,10 @@
                         что идёт после &#8242;#&#8242;.</p>
                         <br>
                         <br>
-                        <a href="index.html">
-                            <img alt="Программа на Python &#8212; часть 1" src="nazad.jpg">
-                          </a>   
-                          <a href="#home">
-                            <img alt="К содерданию" src="domoi.jpg">
-                          </a>   
-                          <a href="index3.html">
-                            <img alt="Программа на Python &#8212; часть 3" src="v_perod.jpg">
-                          </a>
-                            </body>
+                        <div >
+                            <div class="leftimg"><a href="index.html"><button><img alt="стрелка назад" title="Программа на Python &#8212; часть 1" src="nazad.jpg"></button></a></div>
+                            <div class="rightimg"><a href="index3.html"><button><img alt="стрелка в перед " title="Программа на Python &#8212; часть 2" src="v_perod.jpg"></button></a></div>
+                            <div class="pul-center"><a href="#home"><button><img alt="В начало или к заголовку" title="К содержанию" src="domoi.jpg"></button></a></div>
+                         </div>
+
+                </BODY> 
