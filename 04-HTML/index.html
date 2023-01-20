@@ -4,12 +4,33 @@
             <META charset="utf-8"> 
             <TITLE>Document</TITLE> 
         </HEAD> 
+
+        <style>
+            .img-line{
+                margin-right: 10px;
+                margin-left: 10px;
+                border: 2px;
+            }
+            .leftimg{
+                float: left;
+                margin: 0 10px 10px 0;
+            }
+            .rightimg{
+                float: right;
+                margin: 0 0 10px 10px;
+                }
+            .pul-center{
+                text-align: center;
+                }
+        </style>
+        
         <BODY> 
-            <H1><b>HOW-TO: Программа на Python, Часть 1</b></H1>  <p  ><img src="logo.png" width="400" height="400" ></p>
+            <p><img src="logo.png" alt="Python" width="350" height="350" class="rightimg" ></p> <br>
+            <H1 id="home"><b>HOW-TO: Программа на Python, Часть 1</b></H1>  
             <br>
-            <a href="index.html"> Программа на Python &#8212; часть 1</a> <br>
-            <a href="index2.html"> Программа на Python &#8212; часть 2</a> <br>
-            <a href="index3.html"> Программа на Python &#8212; часть 3</a> <br>
+            <li><a href="index.html"> Программа на Python &#8212; часть 1</a> <br></li> 
+            <li><a href="index2.html"> Программа на Python &#8212; часть 2</a> <br></li> 
+            <li><a href="index3.html"> Программа на Python &#8212; часть 3</a> <br></li> 
             <br>
             <H2 id="co"><b>Содержание</b></H2>
             <br>
@@ -26,7 +47,7 @@
                 <br>
                 <a id="NP"><h3><b> Наша первая программа </b></h3></a><br>
                 <br>
-                <li><a href="#co">К содержанию</a></li>
+                <a href="#co">К содержанию</a>
                 <br>
                  <p>Наберём код в текстовом редакторе (например, в <b>gedit</b> ). Потом мы разберёмся, что делает каждая
                     строка и пойдём дальше. <br>
@@ -54,7 +75,7 @@
                         <br>
                         <a id="PC"><h3><b>Пример цикла For</b></h3></a> 
                         <br>
-                        <li><a href="#co">К содержанию</a></li>
+                        <a href="#co">К содержанию</a>
                         <br>
                         <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый редактор и
                             наберите следующую программу:</p>
@@ -67,6 +88,32 @@
                         <p>Не забудьте поставить символ табуляции перед строкой «print cntr». Это важно. В Python для
                             указания на блоки кода используются не круглые «(» и фигурные «{» скобки как в других языках
                             программирования, а отступы.</p>
-                            
+                         <br>
+                         <br>
+                         
+                         <!--
+                          не могу понять почему последняя кнопка ниже  
+                          <a href="index.html"><img alt="Программа на Python &#8212; часть 1" src="nazad.jpg" width="80" height="80" class="leftimg"></a>
+                          <a href="#home"><img alt="Программа на Python &#8212; часть 1" src="domoi.jpg" width="80" height="80" class="centerimg"></a>
+                          <a href="index2.html"><img alt="Программа на Python &#8212; часть 1" src="v_perod.jpg" width="80" height="80" class="rightimg"></a>
+                        В этой комбинакии уже средняя проседает в низ
+                        <tr>
+                            <td width="40px"><p class="leftimg" > <a href="index.html"><button><img alt="стрелка назад" title="Программа на Python &#8212; часть 1" src="nazad.jpg"></button></a></p></td>
+                            <td width="40px"><p class="rightimg" ><a href="index2.html"><button><img alt="стрелка в перед " title="Программа на Python &#8212; часть 2" src="v_perod.jpg"></button></a></p></td> 
+                            <td width="40px"><p class="pul-center" ><a href="#home"><button><img alt="В начало или к заголовку" title="К содержанию" src="domoi.jpg"></button></a></p></td>    
+                        </tr>
+
+                        а вот последняя версия всетаки заработала
+                        -->
+
+                        
+                          
+                        <div >
+                            <div class="leftimg"><a href="index.html"><button><img alt="стрелка назад" title="Программа на Python &#8212; часть 1" src="nazad.jpg"></button></a></div>
+                            <div class="rightimg"><a href="index2.html"><button><img alt="стрелка в перед " title="Программа на Python &#8212; часть 2" src="v_perod.jpg"></button></a></div>
+                            <div class="pul-center"><a href="#home"><button><img alt="В начало или к заголовку" title="К содержанию" src="domoi.jpg"></button></a></div>
+                         </div>
+                          
+                          <!--Считается ли ошибкой не знаю но если надо по кругу листать то в index надр дописать 3 и в последней index3.html так же заменить  href="index.html -->
                             </BODY> 
 
