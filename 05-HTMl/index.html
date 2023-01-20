@@ -11,20 +11,21 @@
     <fieldset>
         <legend>Личные данные</legend>
         <select name ="data" id="indata"></select>
-            <input type="text" maxlength="25" required placeholder="Фамилия" autofocus pattern="^[А-Яа-яЁё\s]"><br>
-            <input type="text" maxlength="20" required placeholder="Имя" pattern="^[А-Яа-яЁё\s]"><br>
-            <input type="text" maxlength="24" required placeholder="Отчество" pattern="^[А-Яа-яЁё\s]">
+        <input type="text" maxlength="25" required placeholder="Фамилия" autofocus pattern="^[А-Яа-яЁё\s]"><br>
+        <input type="text" maxlength="20" required placeholder="Имя" pattern="^[А-Яа-яЁё\s]"><br>
+        <input type="text" maxlength="24" required placeholder="Отчество" pattern="^[А-Яа-яЁё\s]">
         </select><br>
         <fieldset>
-            <legend>Паспортные данные</legend>
-        <select name ="passp" id="pasdata">
-            <input type="text" size="2" maxlength="2" required placeholder="АА" pattern="[A-Z]{2}">
-            <input type="text" size="7" maxlength="7" required placeholder="1234567" pattern="[0-9]{7}">
+                 <legend>Паспортные данные</legend>
+                 <select name ="passp" id="pasdata">
+        <input type="text" size="2" maxlength="2" required placeholder="АА" pattern="[A-Z]{2}">
+        <input type="text" size="7" maxlength="7" required placeholder="1234567" pattern="[0-9]{7}">
         </select><br>
         </fieldset>
         <fieldset>
-            <legend>Дата рождения</legend>
+        <legend>Дата рождения</legend>
         <select name ="born" id="borndata">
+        
             <input type="text" size="4" maxlength="4" placeholder="2000" pattern="[0-9]{4}">
         </select><br>   
             <select name ="month" id="list1">
@@ -67,19 +68,19 @@
         <legend>Домашние животные</legend>
         <select multiple name ="multi" id="list3" size="12">
             <optgroup label="Попугаи"> 
-                <option value="parrot1">Волнистый</option>
-                <option value="parrot2">Ара</option>
-                <option value="parrot3">Неразлучник</option>
+        <option value="parrot1">Волнистый</option>
+        <option value="parrot2">Ара</option>
+        <option value="parrot3">Неразлучник</option>
             </optgroup>
             <optgroup label="Рыба">
-                <option value="fish1">Караси</option>
-                <option value="fish2">Окуни</option>
-                <option value="fish3">Осётр</option>
+            <option value="fish1">Караси</option>
+            <option value="fish2">Окуни</option>
+            <option value="fish3">Осётр</option>
             </optgroup>
             <optgroup label="Птицы">
-                <option value="bird1">Стая ворон</option>
-                <option value="bird2">Аист</option>
-                <option value="bird3">Археоптерикс</option>
+            <option value="bird1">Стая ворон</option>
+            <option value="bird2">Аист</option>
+            <option value="bird3">Археоптерикс</option>
             </optgroup>
         </select>
     </fieldset>
@@ -93,7 +94,7 @@
     </fieldset>
 
     <fieldset>
-        <legend>Координаты</legend>
+        <legend>Aдрес</legend>
     <select name ="cord" id="coodinat">
         <input type="email" placeholder="введите адрес почты" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"><br>
         <input type="url" placeholder="введите адрес сайта" pattern="^((https?|ftp)\:\/\/)?([a-z0-9]{1})((\.[a-z0-9-])|([a-z0-9-]))*\.([a-z]{2,6})(\/?)$">
