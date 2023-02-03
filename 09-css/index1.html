@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форматы файлов</title>
+    <style>
+        p {
+            text-indent: 25px;
+            border: solid rgb(5, 5, 5) 1px;
+            border-radius: 0px 25px 0px 25px;
+            padding: 5px;
+            
+        }
+
+        A.doc {
+            background: url(cursor.png) no-repeat 0 5px;
+            padding-left: 13px;
+             }
+                
+        a[href*='word']::after {content: url(word.jpg);}
+        a[href*='pdf']::after {content: url(pdf.png); }
+        a[href*='zip']::after {content: url(zip.gif);}
+        a[href*='pg']::before {content: url(file.jpg);}
+
+        
+
+        a span img{
+            display: none;
+            position: absolute;
+            margin-left: 4cm;
+            margin-top: -0.7cm;
+        }
+
+        a:hover span img{
+            display: block;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h2>Форматы файлов</h2>
+    <p>.DOC или .doc (от англ. <a href="http://htmlbook.ru" class="doc">Docoments</a> - расширение имени файла, используемое для файлов,
+        представляющих текст,
+        с разметкой или без. Расширение .DOC часто использовалось для обозначения простых текстовых файлов без
+        формирования,
+        однако позже стало использоваться для двоичных форматов с разметкой.<br>
+        <a href="word">Документ MS WordS</a >
+    </p>
+
+    <p>Portable Document Format (<a href="http://htmlbook.ru" class="doc">PDF</a>) - межплатформенный формат электронных документов,
+        разработанный фирмой Adobe Systems
+        с использованием ряда возможностей языка Postscript.<br>
+        <a href="pdf">Документ PDF</a>
+    </p>
+    <p>ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="http://htmlbook.ru" class="doc">.ZIP</a> и хранит
+        в сжатом или несжатом виде один или несколько файлов, которое можно из него извлечь путем распаковки с помощью
+        специальной программы.<br>
+        <a href="zip">Архив</a>
+    </p>
+    <ul>
+        <h3>Это список файлов</h3>
+        <a href="pg"><span>Документ MS Word <img src="word.jpg"></span></a> <br> 
+        <a href="pg"><span>Документ PDF<img src="pdf.png"></span></a> <br>
+        <a href="pg"><span>Архив<img src="zip.gif"></span></a> <br>
+    </ul>
+
+</body>
+
+</html>
