@@ -1,0 +1,40 @@
+div {
+    border-radius: 5px;
+}
+
+
+div.day > div {
+    width: 100px;
+    height: 20px;
+    background-color: #d3d3d3;
+    border: solid #777777 1px;
+    cursor: pointer;
+    float: left;
+
+}
+div.day > div a:hover{
+    background: #454547;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.5s ease;
+}
+
+div.Menu2 {
+    opacity: 0;
+    visibility: hidden;
+    }
+
+div.Menu2 > div {
+    background-color: #d3d3d3;
+    border: solid #757373 1px;
+    width: 100px;
+    display: inline-table;
+    
+    
+}
+
+div.day > div:hover div.Menu2 {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1
+    
+}
